@@ -18,11 +18,11 @@
 ### 方法 A — 放到 Claude Code 的 skills 目錄
 
 \`\`\`bash
-# 專案層級（只在此 repo 生效）
+# 專案層級
 mkdir -p .claude/skills/fluorescence-coexpression
 cp SKILL.md .claude/skills/fluorescence-coexpression/
 
-# 或使用者層級（全域生效）
+# 或使用者層級
 mkdir -p ~/.claude/skills/fluorescence-coexpression
 cp SKILL.md ~/.claude/skills/fluorescence-coexpression/
 \`\`\`
@@ -65,7 +65,7 @@ CZI 為自行解析（不需額外套件），但如有需要可安裝 czifile �
 - 這個 CZI 檔裡 GFP+ 的細胞有多少同時是 SOX2+？
 - 算共表現，然後把三組樣本做 mean ± SD
 
-## 分析流程（Skill 內部七步）
+## 分析流程
 
 1. 判斷輸入格式（CZI / TIFF / JPEG）
 2. 讀取影像資料、取出兩個 channel
